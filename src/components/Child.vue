@@ -5,6 +5,8 @@
             {{ user.name }}
         </h3>
         <button @click="getdata()" class="bg-slate-700">Call function in the parent </button>
+        <br />
+        <button @click="childToParent(userName)">Send username</button>
     </div>
 </template>
 
@@ -14,7 +16,13 @@ export default {
     props: {
         MessageToChildFromParent: String,
         user: Object,
-        getdata: Function
+        getdata: Function,
+        childToParent: Function
+    },
+    data() {
+        return {
+            userName: "peter"
+        }
     }
 }
 </script>

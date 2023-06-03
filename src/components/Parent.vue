@@ -1,6 +1,7 @@
 <template>
     <h1 class="bg-red-600">{{ Message }}</h1>
-    <Child MessageToChildFromParent="You are the children to Parent component" :user="user" :getdata="getdata" />
+    <h1 class="bg-red-600">{{ childUser }}</h1>
+    <Child MessageToChildFromParent="You are the children to Parent component" :user="user" :getdata="getdata" :childToParent="getDataFromChild" />
 </template>
 
 <script>
@@ -13,12 +14,16 @@ export default {
     },
     data() {
         return {
-            user: { name: 'peter', email: 'peter@example.com' }
+            user: { name: 'peter', email: 'peter@example.com' },
+            childUser:""
         }
     },
     methods:{
         getdata(){
             console.warn('Parent function called')
+        },
+        getDataFromChild(name){
+            this.childUser=name
         }
     },
     components: {

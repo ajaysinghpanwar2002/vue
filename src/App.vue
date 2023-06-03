@@ -1,12 +1,13 @@
 <template>
   <div>
-    <!-- <Hello message="Welcome to the Vue app" />
-    <Button text="Click me" />
-    <Input placeholder="Please enter email" />
-    <Input placeholder="Please enter a password" /> -->
+    <!-- <Hello message="Welcome to the Vue app" /> -->
+    <!-- <Button text="Click me" /> -->
+    <!-- <Input placeholder="Please enter email" /> -->
     <!-- <Form/> -->
     <!-- <Checkbox /> -->
     <!-- <Parent Message="You are the parent component"/> -->
+    <!-- <HtmlBinding /> -->
+    <!-- <ClassBinding/> -->
   </div>
 </template>
 
@@ -17,11 +18,13 @@
 // import Form from './components/Form.vue';
 // import Checkbox from './components/Checkbox.vue';
 // import Parent from './components/Parent.vue';
+// import HtmlBinding from './components/HtmlBinding.vue';
+// import ClassBinding from './components/ClassBinding.vue';
 
 export default {
   name: 'App',
   components: {
     // Parent
-}
+  }
 };
 </script>
