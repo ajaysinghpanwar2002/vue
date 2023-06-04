@@ -8,6 +8,11 @@
     <!-- <Parent Message="You are the parent component"/> -->
     <!-- <HtmlBinding /> -->
     <!-- <ClassBinding/> -->
+    <!-- <Modifiers/> -->
+    <!-- <NonProps data="some data" id="user-cmp"/> -->
+    <!-- <Computed/> -->
+    <!-- <Watchers/> -->
+    <Slots/>
   </div>
 </template>
 
@@ -20,11 +25,16 @@
 // import Parent from './components/Parent.vue';
 // import HtmlBinding from './components/HtmlBinding.vue';
 // import ClassBinding from './components/ClassBinding.vue';
+// import NonProps from './components/NonProps.vue';
+// import Modifiers from './components/Modifiers.vue';
+// import Computed from './components/Computed.vue';
+// import Watchers from './components/Watchers.vue';
+import Slots from './components/Slots.vue';
 
 export default {
   name: 'App',
   components: {
-    // Parent
-  }
+    Slots
+}
 };
 </script>
