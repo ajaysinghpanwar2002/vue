@@ -33,6 +33,11 @@
     <!-- <Mount/> -->
     <!-- <Update/> -->
     <!-- <UnMount/> -->
+
+    <!-- router in vue js -->
+    <!-- <router-view /> -->
+
+    <Users/>
   </div>
 </template>
 
@@ -56,11 +61,12 @@
 // import Mount from './components/lifeCycleMethods/Mount.vue';
 // import Update from './components/lifeCycleMethods/Update.vue';
 // import UnMount from './components/lifeCycleMethods/UnMount.vue';
+import Users from './components/API/Users.vue';
 
 export default {
   name: 'App',
   components: {
-    // UnMount
+    Users
 }
 };
 </script>
