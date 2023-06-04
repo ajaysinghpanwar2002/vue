@@ -12,7 +12,27 @@
     <!-- <NonProps data="some data" id="user-cmp"/> -->
     <!-- <Computed/> -->
     <!-- <Watchers/> -->
-    <Slots/>
+    <!-- <Slots>
+      <template v-slot:header>
+        <h1>Peter</h1>
+      </template>
+      <template v-slot:content>
+        <h1>A vue js product</h1>
+      </template>
+      <template v-slot:footer>
+        <button>Buy now</button>
+      </template>
+    </Slots> -->
+    <!-- <DynamicComponent/> -->
+    <!-- <teleport to="#TeleportComponent">
+      <TeleportComponent/>
+    </teleport> -->
+
+    <!-- lifecycle methods -->
+    <!-- <Create/> -->
+    <!-- <Mount/> -->
+    <!-- <Update/> -->
+    <!-- <UnMount/> -->
   </div>
 </template>
 
@@ -29,12 +49,18 @@
 // import Modifiers from './components/Modifiers.vue';
 // import Computed from './components/Computed.vue';
 // import Watchers from './components/Watchers.vue';
-import Slots from './components/Slots.vue';
+// import Slots from './components/Slots.vue';
+// import DynamicComponent from './components/DynamicComponent.vue';
+// import TeleportComponent from './components/TeleportComponent.vue';
+// import Create from './components/lifeCycleMethods/Create.vue';
+// import Mount from './components/lifeCycleMethods/Mount.vue';
+// import Update from './components/lifeCycleMethods/Update.vue';
+// import UnMount from './components/lifeCycleMethods/UnMount.vue';
 
 export default {
   name: 'App',
   components: {
-    Slots
+    // UnMount
 }
 };
 </script>
